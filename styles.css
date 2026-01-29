@@ -67,6 +67,19 @@ body {
     font-weight: 500;
 }
 
+.header p.instruction {
+    font-size: 0.95rem;
+    margin-top: 10px;
+    opacity: 0.85;
+    font-weight: 400;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.85; }
+    50% { opacity: 1; }
+}
+
 .timeline-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -85,19 +98,19 @@ body {
     opacity: 0.3;
 }
 
-.milestone {
+.month {
     position: relative;
     margin-bottom: 100px;
     opacity: 0;
     animation: slideIn 0.8s ease forwards;
 }
 
-.milestone:nth-child(1) { animation-delay: 0.1s; }
-.milestone:nth-child(2) { animation-delay: 0.2s; }
-.milestone:nth-child(3) { animation-delay: 0.3s; }
-.milestone:nth-child(4) { animation-delay: 0.4s; }
-.milestone:nth-child(5) { animation-delay: 0.5s; }
-.milestone:nth-child(6) { animation-delay: 0.6s; }
+.month:nth-child(1) { animation-delay: 0.1s; }
+.month:nth-child(2) { animation-delay: 0.2s; }
+.month:nth-child(3) { animation-delay: 0.3s; }
+.month:nth-child(4) { animation-delay: 0.4s; }
+.month:nth-child(5) { animation-delay: 0.5s; }
+.month:nth-child(6) { animation-delay: 0.6s; }
 
 @keyframes slideIn {
     from {
@@ -110,15 +123,15 @@ body {
     }
 }
 
-.milestone:nth-child(odd) .milestone-content {
+.month:nth-child(odd) .month-content {
     margin-right: 52%;
 }
 
-.milestone:nth-child(even) .milestone-content {
+.month:nth-child(even) .month-content {
     margin-left: 52%;
 }
 
-.milestone-marker {
+.month-marker {
     position: absolute;
     left: 50%;
     top: 30px;
@@ -140,12 +153,12 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.milestone:hover .milestone-marker {
+.month:hover .month-marker {
     transform: translateX(-50%) scale(1.15);
     box-shadow: var(--shadow-hover);
 }
 
-.milestone-content {
+.month-content {
     background: var(--bg-card);
     border-radius: 20px;
     padding: 40px;
@@ -154,24 +167,64 @@ body {
     border-left: 6px solid var(--accent-primary);
 }
 
-.milestone:nth-child(2) .milestone-content { border-left-color: #FF8C42; }
-.milestone:nth-child(3) .milestone-content { border-left-color: var(--accent-secondary); }
-.milestone:nth-child(4) .milestone-content { border-left-color: #FFB84D; }
-.milestone:nth-child(5) .milestone-content { border-left-color: #89CFF0; }
-.milestone:nth-child(6) .milestone-content { border-left-color: var(--accent-tertiary); }
+.month:nth-child(2) .month-content { border-left-color: #FF8C42; }
+.month:nth-child(3) .month-content { border-left-color: var(--accent-secondary); }
+.month:nth-child(4) .month-content { border-left-color: #FFB84D; }
+.month:nth-child(5) .month-content { border-left-color: #89CFF0; }
+.month:nth-child(6) .month-content { border-left-color: var(--accent-tertiary); }
 
-.milestone:hover .milestone-content {
+.month-content.expanded {
     transform: translateY(-5px);
     box-shadow: var(--shadow-hover);
 }
 
-.milestone-age {
+.month:hover .month-content:not(.expanded) {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+}
+
+.month-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+    padding: 5px;
+    margin: -5px;
+    border-radius: 12px;
+}
+
+.month-header:hover {
+    background: rgba(255, 107, 53, 0.05);
+}
+
+.month-age {
     font-family: 'Fraunces', serif;
     font-size: 2rem;
     font-weight: 900;
     color: var(--accent-primary);
-    margin-bottom: 20px;
     letter-spacing: -0.02em;
+}
+
+.toggle-icon {
+    font-size: 1.5rem;
+    color: var(--accent-primary);
+    transition: transform 0.3s ease;
+    font-weight: bold;
+}
+
+.month-details {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.3s ease, margin-top 0.3s ease;
+}
+
+.month-details.open {
+    max-height: 2000px;
+    opacity: 1;
+    margin-top: 20px;
 }
 
 .section {
@@ -236,21 +289,21 @@ body {
         left: 30px;
     }
 
-    .milestone:nth-child(odd) .milestone-content,
-    .milestone:nth-child(even) .milestone-content {
+    .month:nth-child(odd) .month-content,
+    .month:nth-child(even) .month-content {
         margin-left: 80px;
         margin-right: 0;
     }
 
-    .milestone-marker {
+    .month-marker {
         left: 30px;
     }
 
-    .milestone:hover .milestone-marker {
+    .month:hover .month-marker {
         transform: translate(-50%, 0) scale(1.15);
     }
 
-    .milestone-content {
+    .month-content {
         padding: 30px;
     }
 
