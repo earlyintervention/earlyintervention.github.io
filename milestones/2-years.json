@@ -1,0 +1,29 @@
+{
+    "marker": "2Y",
+    "age": "2 Years",
+    "sections": [
+        {
+            "icon": "👀",
+            "title": "What to Look For",
+            "items": [
+                "Runs easily and begins to kick a ball",
+                "Combines two words together (\"more milk\")",
+                "Follows two-step instructions",
+                "Names items in a picture book",
+                "Begins to sort objects by shape and color",
+                "Shows increasing independence (\"me do it!\")"
+            ]
+        },
+        {
+            "icon": "🎯",
+            "title": "Activities to Try",
+            "items": [
+                "Play with playdough and finger paints",
+                "Build with blocks and towers",
+                "Practice simple dress-up and role-playing",
+                "Engage in outdoor play - running, climbing, sliding",
+                "Read stories and ask simple questions about them"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "marker": "18M",
+    "age": "18 Months",
+    "sections": [
+        {
+            "icon": "👀",
+            "title": "What to Look For",
+            "items": [
+                "Walks independently and may start to run",
+                "Says several single words (10-20 words)",
+                "Points to show things to others",
+                "Knows what ordinary objects are for (phone, spoon)",
+                "Begins pretend play (feeding a doll)",
+                "Can follow simple one-step commands"
+            ]
+        },
+        {
+            "icon": "🎯",
+            "title": "Activities to Try",
+            "items": [
+                "Read interactive books and ask them to point at pictures",
+                "Play with shape sorters and simple puzzles",
+                "Provide crayons for scribbling",
+                "Practice going up and down stairs with support",
+                "Sing action songs like \"Itsy Bitsy Spider\""
+            ]
+        }
+    ]
+}

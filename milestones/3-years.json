@@ -1,0 +1,29 @@
+{
+    "marker": "3Y",
+    "age": "3 Years",
+    "sections": [
+        {
+            "icon": "👀",
+            "title": "What to Look For",
+            "items": [
+                "Climbs well and pedals a tricycle",
+                "Uses 3-4 word sentences",
+                "Understands concepts like \"in\", \"on\", \"under\"",
+                "Can work simple toys and turn pages one at a time",
+                "Engages in pretend play with others",
+                "Shows affection for friends without prompting"
+            ]
+        },
+        {
+            "icon": "🎯",
+            "title": "Activities to Try",
+            "items": [
+                "Encourage imaginative play with costumes and props",
+                "Practice cutting with child-safe scissors",
+                "Build more complex structures with blocks",
+                "Play group games with simple rules",
+                "Introduce early learning concepts through play"
+            ]
+        }
+    ]
+}

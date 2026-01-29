@@ -1,0 +1,29 @@
+{
+    "marker": "12M",
+    "age": "12 Months",
+    "sections": [
+        {
+            "icon": "👀",
+            "title": "What to Look For",
+            "items": [
+                "Pulls to stand and may take first steps",
+                "Says \"mama\" and \"dada\" with meaning",
+                "Uses simple gestures like waving and shaking head",
+                "Points to objects they want",
+                "Shows preferences for certain people and toys",
+                "May show fear of strangers"
+            ]
+        },
+        {
+            "icon": "🎯",
+            "title": "Activities to Try",
+            "items": [
+                "Practice walking while holding their hands",
+                "Play stacking and nesting games",
+                "Name objects and body parts during daily routines",
+                "Encourage dancing to music",
+                "Play simple ball games - rolling back and forth"
+            ]
+        }
+    ]
+}

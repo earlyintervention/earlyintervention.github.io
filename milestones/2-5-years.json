@@ -1,0 +1,29 @@
+{
+    "marker": "2.5Y",
+    "age": "2.5 Years",
+    "sections": [
+        {
+            "icon": "👀",
+            "title": "What to Look For",
+            "items": [
+                "Jumps with both feet leaving the ground",
+                "Uses 2-3 word sentences regularly",
+                "Knows names of familiar people and body parts",
+                "Can work toys with buttons and levers",
+                "Shows defiant behavior (\"no!\" phase)",
+                "Begins to play alongside other children"
+            ]
+        },
+        {
+            "icon": "🎯",
+            "title": "Activities to Try",
+            "items": [
+                "Practice taking turns with simple games",
+                "Create art with various materials",
+                "Introduce tricycles or ride-on toys",
+                "Play matching games and simple memory games",
+                "Sing counting songs and practice counting objects"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "marker": "6M",
+    "age": "6 Months",
+    "sections": [
+        {
+            "icon": "👀",
+            "title": "What to Look For",
+            "items": [
+                "Rolls over in both directions",
+                "Begins to sit without support",
+                "Rocks back and forth on hands and knees",
+                "Responds to their own name",
+                "Begins to pass objects from one hand to another",
+                "Makes consonant sounds like \"ba\", \"da\", \"ga\""
+            ]
+        },
+        {
+            "icon": "🎯",
+            "title": "Activities to Try",
+            "items": [
+                "Tummy time with colorful toys just out of reach",
+                "Sing songs and make silly sounds together",
+                "Play peek-a-boo to build object permanence",
+                "Offer safe objects to grab and explore",
+                "Read board books with bright pictures"
+            ]
+        }
+    ]
+}
