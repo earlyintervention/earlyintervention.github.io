@@ -51,29 +51,34 @@ in .header as it affects all child elements */
 }
 
 .header h2 {
-    text-align: center; 
+    text-align: center;
     font-family: 'Fraunces', serif;
     font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.instructions {
-    text-align: left;
-    opacity: 0.95;
     font-weight: 500;
     max-width: 580px;
     margin: 20px auto 0;
+    line-height: 1.4;
 }
 
 .instructions p {
-    margin-bottom: 2.5rem;
+    margin-bottom: 10px;
 }
 
-.instructions ul {
-    list-style: none;
-    padding: 0;
-    padding-left: 40px;
+.instructions ul li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Dash marker, vertically centred on the first line of text */
+.instructions ul li::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: inherit;
+    font-weight: 600;
 }
 
 /* ─── Timeline ───────────────────────────────────────── */
