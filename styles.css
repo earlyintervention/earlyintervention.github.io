@@ -1,13 +1,13 @@
 :root {
-    --bg-primary: #FFF8F0;
+    --bg-primary: #F0F4F8;
     --bg-card: #FFFFFF;
-    --accent-primary: #FF6B35;
-    --accent-secondary: #F7931E;
-    --accent-tertiary: #4ECDC4;
-    --text-primary: #2C3E50;
-    --text-secondary: #7F8C8D;
-    --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.08);
-    --shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.12);
+    --accent-primary: #4682B4;
+    --accent-secondary: #2E6DA4;
+    --accent-tertiary: #A8D0E6;
+    --text-primary: #1B2A3A;
+    --text-secondary: #5A7A8A;
+    --shadow-soft: 0 8px 30px rgba(70, 130, 180, 0.1);
+    --shadow-hover: 0 12px 40px rgba(70, 130, 180, 0.18);
     --transition-speed: 0.3s ease;
 }
 
@@ -29,38 +29,16 @@ body {
 
 .header {
     padding: 80px 20px 60px;
-    background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+    background: #2E6DA4;
     color: white;
     position: relative;
     overflow: hidden;
 }
 
-.header::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-}
-
-@keyframes float {
-    0%, 100% { transform: translate(0, 0) rotate(0deg); }
-    50% { transform: translate(30px, 30px) rotate(180deg); }
-}
-
-/* Consolidates the shared z-index stacking for all direct
-   header children so the gradient overlay doesn't cover them */
-.header > * {
-    font-family: 'Fraunces', serif;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-}
-
 .header h1 {
     font-size: clamp(2.5rem, 6vw, 4rem);
     font-weight: 900;
+    text-align: center;
     letter-spacing: -0.02em;
     margin-bottom: 15px;
 }
@@ -68,11 +46,10 @@ body {
 .header h2 {
     font-size: 1.8rem;
     font-weight: 600;
+    text-align: center;
     margin-bottom: 10px;
 }
 
-/* Scoped to DIRECT children only (> p) so it doesn't bleed
-   into the paragraphs nested inside .instructions */
 .header > p {
     text-align: left;
     font-size: 1.1rem;
@@ -84,15 +61,7 @@ body {
     text-align: left;
     max-width: 720px;
     margin: 20px auto 0;
-}
-
-.instructions p,
-.instructions ul {
-    margin-bottom: 1rem;
-}
-
-.instructions p:last-child {
-    margin-bottom: 1.2rem;
+    gap: 1rem;
 }
 
 /* ─── Timeline ───────────────────────────────────────── */
