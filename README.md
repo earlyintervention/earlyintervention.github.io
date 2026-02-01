@@ -1,29 +1,32 @@
-# About us  
-This website is written by a parent who has been on the ASD early intervention journey.  
+# About this website      
+This website is written by a parent currently navigating the autism spectrum disorder (ASD) early intervention journey.  
 
-This website aims to provide advice that:  
+The website aims to provide advice that:  
 
-+ Is short and simple (for time-poor parents)  
-+ Prioritises evidence-based findings  
-+ Considers the diverse spectrum of ASD.   
++ Prioritises evidence-based research   
++ Provides practical tips for parent-led coaching         
++ Is short and simple to read (for time-poor and/or anxious parents)   
++ Is neuro-affirming and respectful of the diverse spectrum of ASD experiences      
 
-> [!IMPORTANT] 
-> This website should not be replaced by medical guidance through a Paediatrician or GP (who can refer to a Paediatrician).   
+> [!IMPORTANT]   
+> This website is a guide written by a parent for other parents. It should not replace seeking early intervention through qualitified therapists and medical guidance through a Paediatrician or General Practioner.        
 
 # Website file structure
 
 ```
-├── index.html              # Main HTML file
-├── styles.css              # All styling
-├── app.js                  # JavaScript that loads and renders milestones
-├── milestones/             # Directory containing milestone data
+├── index.html                # Main HTML file   
+├── styles.css                # Styling for text, colour scheme, interactive elements and website layout    
+├── app.js                    # JavaScript code that loads and renders month-based articles    
+├── months/
+|   |── is-this-for-you.json  # Directory containing months-based content   
+|   |── before-6-months.json  # 
 │   ├── 6-months.json
 │   ├── 12-months.json
 │   ├── 18-months.json
 │   ├── 2-years.json
 │   ├── 2-5-years.json
 │   └── 3-years.json
-└── README.md               # This file
+└── README.md                   
 ```
 
 ## How It Works
@@ -32,7 +35,9 @@ This website aims to provide advice that:
 - Main HTML structure
 - Links to `styles.css` for styling
 - Links to `app.js` for functionality
-- Contains empty container `#milestones-wrapper` where milestones are dynamically loaded
+- Contains empty container `#months-wrapper` where milestones are dynamically loaded   
+- Contains introductory text in `<div class="instruction">` about the website aims and who it is suitable for.  
+- Contains a disclaimer in `<div class="footer">` that there is no best earliest timeline for early intervention.  
 
 ### 2. **styles.css**
 - All CSS styles for the timeline
