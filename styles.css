@@ -27,17 +27,23 @@ body {
 
 /* ─── Header ─────────────────────────────────────────── */
 
+/* Do not put 
+- text-align: center; 
+- font-family: 'Fraunces', serif;
+in .header as it affects all child elements */
+
 .header {
     padding: 80px 20px 60px;
     background: #2E6DA4;
     color: white;
-    font-family: 'Fraunces', serif;
-    text-align: center;
+    
     position: relative;
     overflow: hidden;
 }
 
 .header h1 {
+    text-align: center; 
+    font-family: 'Fraunces', serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
     font-weight: 900;
     letter-spacing: -0.02em;
@@ -45,6 +51,8 @@ body {
 }
 
 .header h2 {
+    text-align: center; 
+    font-family: 'Fraunces', serif;
     font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 10px;
@@ -54,15 +62,17 @@ body {
     text-align: left;
     opacity: 0.95;
     font-weight: 500;
-    max-width: 600px;
+    max-width: 580px;
     margin: 20px auto 0;
-    gap: 2rem;
+}
+
+.instructions p {
+    margin-bottom: 2.5rem;
 }
 
 .instructions ul {
     list-style: none;
     padding: 0;
-    margin-left: -40px;
     padding-left: 40px;
 }
 
