@@ -4,7 +4,7 @@ This website is written by a parent currently navigating the autism spectrum dis
 The website aims to provide advice that:  
 
 + Prioritises evidence-based research   
-+ Provides practical tips for parent-led coaching         
++ Provides practical tips for parent-led early intervention          
 + Is short and simple to read (for time-poor and/or anxious parents)   
 + Is neuro-affirming and respectful of the diverse spectrum of ASD experiences      
 
@@ -35,7 +35,7 @@ The website aims to provide advice that:
 - Main HTML structure
 - Links to `styles.css` for styling
 - Links to `app.js` for functionality
-- Contains empty container `#months-wrapper` where milestones are dynamically loaded   
+- Contains empty container `#months-wrapper` where months-based content is dynamically loaded   
 - Contains introductory text in `<div class="instruction">` about the website aims and who it is suitable for.  
 - Contains a disclaimer in `<div class="footer">` that there is no best earliest timeline for early intervention.  
 
