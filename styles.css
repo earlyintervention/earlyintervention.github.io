@@ -8,6 +8,7 @@
     --text-secondary: #7F8C8D;
     --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.08);
     --shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.12);
+    --transition-speed: 0.3s ease;
 }
 
 * {
@@ -23,6 +24,8 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 }
+
+/* ─── Header ─────────────────────────────────────────── */
 
 .header {
     text-align: center;
@@ -49,13 +52,18 @@ body {
     50% { transform: translate(30px, 30px) rotate(180deg); }
 }
 
+/* Consolidates the shared z-index stacking for all direct
+   header children so the gradient overlay doesn't cover them */
+.header > * {
+    position: relative;
+    z-index: 1;
+}
+
 .header h1 {
     font-family: 'Fraunces', serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
     font-weight: 900;
     margin-bottom: 15px;
-    position: relative;
-    z-index: 1;
     letter-spacing: -0.02em;
 }
 
@@ -66,11 +74,11 @@ body {
     margin-bottom: 10px;
 }
 
-.header p {
+/* Scoped to DIRECT children only (> p) so it doesn't bleed
+   into the paragraphs nested inside .instructions */
+.header > p {
     font-size: 1.1rem;
     opacity: 0.95;
-    position: relative;
-    z-index: 1;
     font-weight: 500;
 }
 
@@ -82,12 +90,14 @@ body {
 
 .instructions p,
 .instructions ul {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 .instructions p:last-child {
-    margin-bottom: 0;
+    margin-bottom: 1.2rem;
 }
+
+/* ─── Timeline ───────────────────────────────────────── */
 
 .timeline-container {
     max-width: 1200px;
@@ -106,6 +116,8 @@ body {
     transform: translateX(-50%);
     opacity: 0.3;
 }
+
+/* ─── Month cards ────────────────────────────────────── */
 
 .month {
     position: relative;
@@ -223,6 +235,8 @@ body {
     font-weight: bold;
 }
 
+/* ─── Month details (collapsible body) ───────────────── */
+
 .month-details {
     max-height: 0;
     overflow: hidden;
@@ -235,6 +249,8 @@ body {
     opacity: 1;
     margin-top: 20px;
 }
+
+/* ─── Sections inside details ────────────────────────── */
 
 .section {
     margin-bottom: 30px;
@@ -293,6 +309,8 @@ body {
     font-weight: bold;
 }
 
+/* ─── Responsive ─────────────────────────────────────── */
+
 @media (max-width: 768px) {
     .timeline-line {
         left: 30px;
@@ -320,6 +338,8 @@ body {
         font-size: 2.5rem;
     }
 }
+
+/* ─── Footer ─────────────────────────────────────────── */
 
 .footer {
     text-align: center;
